@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Om Stockholmsterapi</title>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Main css link  -->
+     <link rel="stylesheet" href="./css/style.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.1/css/all.css">
+
+</head>
+<body>
+    <!-- Navbar -->
+    <nav id="navbar" class="bg-transparent fixed top-0 left-0 w-full z-50 transition-all duration-300">
+        <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto px-16 lg:px-4 py-4">
+            <a href="#section1" class="flex items-center space-x-3">
+                <!-- <img src="./img/" alt="Logo" class="h-8"> -->
+            </a>
+            <div class="flex md:order-2">
+                <button
+                    id="menu-toggle"
+                    type="button"
+                    class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm rounded-lg md:hidden text-white focus:outline-none focus:ring-2 focus:ring-gray-900"
+                >
+                    <i class="fa-solid fa-bars text-3xl text-black"></i>
+                </button>
+            </div>
+            <div class="hidden w-full md:flex md:w-auto md:order-1" id="navbar-cta">
+                <ul class="font-medium flex flex-col md:flex-row md:space-x-8 p-4 md:p-0 text-xl bg-white md:bg-transparent">
+                    <li><a href="#section1" class="nav-link block py-2 px-3 text-black hover:text-[#3F9F6E] duration-500 underline" id="default-active">Om Stockholmsterapi</a></li>
+                    <li><a href="#section2" class="nav-link block py-2 px-3 text-black hover:text-[#3F9F6E] duration-500 underline">Terapiformer</a></li>
+                    <li><a href="#section3" class="nav-link block py-2 px-3 text-black hover:text-[#3F9F6E] duration-500 underline">bloggsektionen</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+
+    <!-- Banner -->
+    <div id="section1" class="px-12 xl:px-28 pt-24 pb-16 bg-blue-50 ">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+            <div>
+                <h2 class="text-black font-semibold text-3xl lg:text-5xl pb-3 lg:pb-4">Terapisamtal Stockholm</h2>
+                <p class="text-gray-800 text-lg lg:text-2xl font-semibold py-8">
+                  Samtalsterapi <br>
+                  Parterapi <br>
+                  Coaching <br>
+                  Stödsamtal fertilitet 
+                </p>
+                <p class="text-gray-800 text-lg lg:text-2xl font-semibold pb-8">Via Teams eller i Stockholm</p>
+                <div class="flex mx-auto gap-6 text-lg lg:text-2xl pt-8">
+                  <button class="bg-[#337F53] text-white px-6 py-4 underline rounded-full font-bold">Terapiform</button>
+                  <button class="bg-[#337F53] text-white px-6 py-4 underline rounded-full font-bold">Meditation</button>
+                </div>
+            </div>
+            <div class="">
+                <div class="grid grid-cols-1 lg:grid-cols-5 py-5 lg:py-5">
+                    <div>
+                       
+                    </div>
+                    <div class="col-span-1 lg:col-span-4">
+                        <img src="./img/Image therapy.jpeg" class="w-full " alt="">
+                    </div>
+                </div>
+                <div class="grid grid-cols-1 lg:grid-cols-5">
+                    <div class="col-span-1 lg:col-span-4">
+                        <img src="./img/Therapy image2.jpg" class="w-full " alt="">
+                    </div>
+                    <div>
+                        
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+    <!-- Card section  -->
+    <div id="section2" class="px-12 xl:px-28 py-16">
+        <div class="py-8 lg:py-16">
+            <div class=" grid grid-cols-1 lg:grid-cols-3 gap-8">
+                <div class="col-span-1 lg:col-span-2">
+                    <h2 class="text-black font-semibold text-3xl lg:text-4xl pb-3 lg:pb-4">SAMTALSTERAPI FÖR ALLA</h2>
+                    <p class="text-black text-lg lg:text-xl pb-8">
+                        Vi har alla dagar när allt går fel, när allt tar emot. Dagar när vi bara vill ge upp. I sådana 
+                        lägen borde vi alla ha en mentor, ett vägledande öra att vända oss till, som finns där och kan 
+                        guida oss i det tuffa. Vi lever i ett tufft tempo, med höga förväntningar där alla ska prestera. 
+                        Alla är upptagna när vi behöver dem som mest.  
+                    </p>
+    
+                    <p class="text-black text-lg lg:text-xl pb-8">
+                        Då kan Räddningen vara en Konsultation bort. Med stor tillgänglighet och humana priser, 
+                        nås jag under dygnets vakna tider. Tveka inte att boka en Provkonsultation! 
+                    </p>
+    
+                    <a href="#" class="underline text-blue-500 pb-8 text-lg lg:text-xl">Läs mer...</a>
+                </div>
+                <div class="col-span-1 pt-0 lg:pt-16">
+                    <img src="./img/Om Terapisamtal Sthlm-20250209T104710Z-001/Om Terapisamtal Sthlm/Samtalsterapi för alla.jpeg" class="w-full" alt="">
+                </div>
+            </div>
+            <div class="py-3 lg:py-8">
+                <h2 class="text-black font-semibold text-3xl lg:text-4xl ">Coaching</h2>
+                <p class="text-black text-lg lg:text-xl">
+                    Coaching är inriktat på att nå mål och utveckla förmågor. Det kan handla om att förändra beteendemönster, förverkliga drömmar, förändra livsriktningen, stärka självkänslan mm.  <a href="#" class="underline text-blue-500 text-lg lg:text-xl">Läs mer...</a>
+                </p>
+            </div>
+        </div>
+
+        <!-- Blog Section  -->
+         <div class="pb-8 lg:pb-16">
+            <h2 class="text-black font-semibold text-3xl lg:text-5xl text-center pt-3 lg:pt-0 pb-3 lg:pb-16 underline">bloggsektionen</h2>
+            <div class=" grid grid-cols-1 lg:grid-cols-2 gap-5">
+                <div>
+                    <div>
+                        <h2 class="text-black font-semibold text-3xl lg:text-4xl pt-3 lg:pt-0 pb-3 lg:pb-4">Förstå ADHD-skillnader hos flickor och pojkar</h2>
+                        <p class="text-black text-lg lg:text-xl">
+                            Tjejer och killar utvecklas olika, vilket påverkar hur deras hjärnor mognar. Detta kan förklara varför ADHD visar sig olika hos dem. Tjejers symptom är ofta mer introverta, vilket gör att många förblir odiagnostiserade och inte får den hjälp de behöver. Endast cirka 25 % av tjejer med ADHD får en diagnos, vilket visar på brister i upptäckten. Med rätt stöd kan de bättre förstå sina utmaningar och hantera dem effektivt.
+                        </p>
+                        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-3 py-8">
+                            <img src="./img/Blog-20250209T104710Z-001/Blog/Adhd hos tjejer.jpeg" class="w-full border" alt="">
+                            <img src="./img/Blog-20250209T104710Z-001/Blog/Adhd hos tjejer 2.jpeg" class="w-full border" alt="">
+                        </div>
+                        <p class="text-black text-lg lg:text-xl pb-8">
+                            Tjejer med introvert ADHD är svårare att upptäcka jämfört med de som är mer utåtagerande. De dagdrömmer ofta, är tysta och försöker smälta in för att inte märkas. I skolan håller de sina känslor inom sig, men hemma kan frustration och trötthet ta över. Detta leder till låg självkänsla och kan påverka deras förmåga att ta plats och uttrycka sig fritt.  <a href="#" class="underline text-blue-500">Läs mer...</a>
+                        </p>
+                    </div>
+                    <div>
+                        <h2 class="text-black font-semibold text-3xl lg:text-4xl py-3 lg:py-0">Vardagens måsten föder stress</h2>
+                        <div class="py-3 lg:py-8">
+                            <img src="./img/Blog-20250209T104710Z-001/Blog/Vardagen föders stress 2.jpeg" class="w-full" alt="">
+                        </div>
+                        <p class="text-black text-lg lg:text-xl">Vardagens måsten skapar stress, och vi försöker hinna med allt utan paus. Vi fastnar i ett ekorrhjul där kraven tar över och semestern ofta inte räcker till. Att bara skala bort uppgifter är svårt, men vi behöver en förändring. En samtalspartner kan hjälpa oss hitta balans och tid för återhämtning.</p>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <h2 class="text-black font-semibold text-3xl lg:text-4xl py-3 lg:py-0">Det måste gå snabbt, ja inte bra snabbt,
+                            utan rent av instantly...</h2>
+                        <div class="grid grid-cols-1 lg:grid-cols-2 gap-5 py-3 lg:py-8 items-center">
+                            <img src="./img/Blog-20250209T104710Z-001/Blog/Allt ska vara Magiskt.jpeg" class="w-full" alt="">
+                            <p class="text-black text-lg lg:text-xl"> Det måste gå snabbt – inte bara snabbt, utan instantaneously. Vi lever i ett tempo där allt ska ske omedelbart, där vi ständigt söker perfektion och bekräftelse.</p>
+                        </div>
+                        <p class="text-black text-lg lg:text-xl">
+                            Vi googlar, läser på och planerar in i minsta detalj för att undvika besvikelser. Det spontana får stå tillbaka; vi rör oss bara på säker terräng och styrs av normer och ideal.Mobilen är vår livlina, vår bekräftelse på att vi gör rätt. Vi matar ut bilder av vårt liv, men frågan är om vi verkligen lever det? När verkligheten inte matchar våra högt ställda förväntningar, blir vi besvikna. Kanske är det dags att släppa kontrollen och leva lite mer i nuet.
+                        </p>
+                        <a href="#" class="underline text-blue-500 pb-8 text-lg lg:text-xl">Läs mer...</a>
+                    </div>
+                    <div>
+                        <h2 class="text-black font-semibold text-3xl lg:text-4xl py-3 lg:pt-8">När gnistan slocknar</h2>
+                        <div class="grid grid-cols-1 lg:grid-cols-2 gap-5 items-center">
+                            <p class="text-black text-lg lg:text-xl pt-0 lg:pt-4">
+                                Har du och din partner börjat glida isär? Känns det som att ni utvecklas åt olika håll?  
+                                Ni kanske inte längre har gemensamma intressen, mål eller tid tillsammans.  
+                                Kanske delar du oftare personliga nyheter med vänner eller kollegor än med din partner.   
+                            </p>
+                            <div>
+                                <img src="./img/Blog-20250209T104710Z-001/Blog/När gnistan tar slut.jpg" class="w-full" alt="">
+                            </div>
+                        </div>
+                        
+                        <p class="text-black text-xl font-semibold lg:text-2xl pt-0 lg:pt-8">Tecken på att ett förhållande är på väg att ta slut:</p>
+                        <ul class="text-black text-lg lg:text-xl pt-0 lg:pt-4">
+                            <li>1) Ni prioriterar inte längre tid tillsammans och gör hellre saker på egen hand.</li> 
+                            <li>2) Du berättar saker först för vänner eller familj istället för din partner.</li>
+                            <li>3) Du glömmer små detaljer din partner berättar och bryr dig mindre om deras planer.</li>
+                            <li>4) Ni firar inte längre årsdagar eller planerar något för framtiden tillsammans.</li>
+                            <li>5) Du tycker ofta att din partner gör fel och dina känslor har svalnat.</li>
+                            <li>6) Ni delar inga gemensamma intressen längre.</li>
+                            <li>7) Du har svårare att ha överseende med din partners misstag.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+         </div>
+    </div>
+
+    <!-- Terapiform, metod & forskning section  -->
+     <div id="section3" class="bg-[#F4F6F7] px-12 xl:px-28 py-16 text-gray-500 text-lg lg:text-2xl">
+        <h2 class="text-black font-semibold text-3xl lg:text-5xl pb-3 lg:pb-4">Terapiform, metod & forskning</h2>
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-2 items-center">
+            <div class="col-span-1 lg:col-span-2 pr-0 lg:pr-20">
+                <p class="py-8">Terapiformer som psykosyntes, KBT och mindfulness kompletterar varandra för ett helhetsperspektiv på människans utveckling. Psykosyntesen, grundad av Roberto Assagioli, fokuserar på individens potential och helhet istället för att enbart analysera problem. KBT hjälper till att bryta negativa tankemönster och hantera ångest, depression och stress genom att förändra beteenden och tankar. Mindfulness handlar om medveten närvaro i nuet, ofta genom meditation, och används för att minska psykisk ohälsa som stress och ångest. Tillsammans skapar dessa metoder verktyg för personlig utveckling och inre balans.
+                </p>
+            </div>
+            <div>
+                <img src="./img/Terapiformer (1)-20250209T104713Z-001/Terapiformer (1)/Terapiformer.jpeg" class="w-full  mx-auto" alt="">
+            </div>
+        </div>
+     </div>
+    <!-- Varför Meditation är så viktigt  -->
+     <div id="section3" class="bg-[#F4F6F7] px-12 xl:px-28 pb-16 text-gray-500 text-lg lg:text-2xl">
+        <h2 class="text-black font-semibold text-3xl lg:text-5xl pb-3 lg:pb-4">Varför Meditation är så viktigt</h2>
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 items-center">
+            <div>
+                <img src="./img/Terapiformer (1)-20250209T104713Z-001/Terapiformer (1)/Meditationens fördelar.jpeg" class="w-full  mx-auto" alt="">
+            </div>
+            <div class="col-span-1 lg:col-span-2 pr-0 lg:pr-20">
+                <p class="py-8">Meditation kan förbättra din mentala hälsa, minska stress, och skapa bättre balans i livet. Det hjälper till att hantera sötsug, kontrollera smärta och förbättra fokus. Regelbunden meditation minskar skadlig inflammation, främjar kognitiv prestanda, och stärker immunförsvaret. Dessutom kan det förhindra förtida åldrande och minska risken för hjärtsjukdomar. Mindfulness bidrar till medvetet ätande och ökad motståndskraft mot infektioner.
+                </p>
+            </div>
+            
+        </div>
+     </div>
+
+     <!-- Rekommendationer -->
+     <div class="bg-white px-12 xl:px-28 py-16 text-gray-500 text-lg lg:text-2xl">
+        <h2 class="text-black font-semibold text-3xl lg:text-5xl pb-3 lg:pb-8">Rekommendationer</h2>
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+            <div class="cols-span-1 lg:col-span-2">
+                <div>
+                    <p class="text-gray-600 text-lg  py-8">
+                        Efter två misslyckade IVF och ett antal förlorade graviditeter knakade vårt förhållande i 
+                        fogarna. Allt handlade om att få det barn vi hade kämpat för i flera år. Vi valde att gå skilda 
+                        vägar. Efter ett tag hittade jag den stöttning vi hade behövt långt tidigare. Jag började träffa 
+                        Annika och så sakteliga började jag återfå hoppet. Genom de kontakter Annika hade 
+                        lyckades vi få hjälp att i vårt barnasträvande. Vi hittade tillbaka till varann och har idag 
+                        Jonathan. Tack vare den peppning och uppmuntran vi fick.
+                    </p>
+                    <p class="text-gray-600 text-lg ">
+                        Rekommenderar varmt Annika. Efter förmycket jobb och förmånga krav på mig själv var jag 
+                        helt slutkörd. Annika hjälpte mig att återfå tron på mig själv och orken att gå vidare. Jobbar 
+                        idag med något helt annat och har börjat om mitt liv med ny man och många nya vänner. Så 
+                        tacksam.
+                    </p>
+                    <p class="text-gray-600 text-lg ">
+                        Jag hade aldrig riktigt lyckats i mitt ledarskap, kände mig alltid på något sätt överkörd. Vid 
+                        utvärderingsenkäterna fick jag alltid en del negativa omdömen, vilket inte var så kul och 
+                        gjorde mig ännu mindre säker i min roll som chef över ett tiotal anställda. Jag gick nån 
+                        ledarskapskurs som gav mig en del hjälp, men det var först när jag gick i stärkande 
+                        ledarskapscoaching hos Annika som jag kände att jag växte och utvecklades på riktigt i min 
+                        chefsroll. Jag kan varmt rekommendera henne!
+                    </p>
+                </div>
+            </div>
+            <div class="cols-span-1 pt-0 lg:pt-8 md:pt-8">
+                <img src="./img/Om Terapisamtal Sthlm-20250209T104710Z-001/Om Terapisamtal Sthlm/Image somewhere on the top.jpeg" class="w-full h-80" alt="">
+            </div>
+        </div>
+     </div>
+
+     <!-- Välkommen section  -->
+     <div id="section4" class="bg-white px-12 xl:px-28 py-24 text-gray-500 text-lg lg:text-2xl gap-8">
+        <div class="text-center">
+            <p class="py-8">Kontakta oss för att boka en provsession! <br> Sessioner via Teams, Zoom eller på plats i Stockholm.</p>
+        </div>
+     </div>
+
+     <!-- Footer section  -->
+     <div class="bg-[#F4F6F7] px-12 xl:px-28 py-16 text-gray-500 text-lg lg:text-xl grid grid-cols-1 lg:grid-cols-2 mx-auto gap-5 items-end">
+        <div>
+            <div>
+                <p class="font-bold">Kontakt</p>
+    
+                <div class="pt-8">
+                    <p>Mobil/SMS +46733439840</p>
+                    <a href="#" class="underline text-blue-500">stockholmterapi@gmail.com</a>
+                </div>
+            </div>
+        </div>
+        <div class="text-right">
+            <p>Copyright © 2025 Annika Ahlström Sterner</p>
+        </div>
+     </div>
+    <!-- JS for Toggle -->
+    <script src="./js/script.js">
+    </script>
+</body>
+</html>
