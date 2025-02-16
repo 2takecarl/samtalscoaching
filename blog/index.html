@@ -1,0 +1,89 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Om Stockholmsterapi</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.1/css/all.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+        body { font-family: 'Inter', sans-serif; }
+        .active-nav { color: #337F53 !important; font-weight: 600; }
+        .gradient-section { background: linear-gradient(135deg, #f8fafc 0%, #f0fdf4 100%); }
+        .card-hover { transition: transform 0.3s ease, box-shadow 0.3s ease; }
+        .card-hover:hover { transform: translateY(-5px); box-shadow: 0 10px 20px rgba(0,0,0,0.08); }
+    </style>
+</head>
+<body class="antialiased">
+    <!-- Modern Navbar -->
+    <nav class="fixed w-full bg-white/90 backdrop-blur-md z-50 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <a href="/" class="text-2xl font-bold text-[#337F53]">Stockholmsterapi</a>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#section1" class="text-gray-600 hover:text-[#337F53] transition-colors">Om oss</a>
+                    <a href="#section2" class="text-gray-600 hover:text-[#337F53] transition-colors">Terapiformer</a>
+                    <a href="#section3" class="text-gray-600 hover:text-[#337F53] transition-colors">Blogg</a>
+                </div>
+                <button id="mobile-menu-button" class="md:hidden p-2 text-gray-600">
+                    <i class="fa-solid fa-bars text-xl"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <section class="flex flex-col gap-12 w-[60vw] justify-center mx-auto h-full">
+        <article class="card-hover bg-white rounded-xl shadow-sm overflow-hidden mt-20">
+            <div class="p-6">
+                <div class="flex gap-4 mb-4">
+                    <span class="bg-[#337F53]/10 text-[#337F53] px-3 py-1 rounded-full text-sm">ADHD</span>
+                </div>
+                <h3 class="text-xl font-bold text-gray-900 mb-4">Förstå ADHD-skillnader hos flickor och pojkar</h3>
+                <div class="grid grid-cols-2 gap-4 mb-6">
+                    <img src="../img/Adhd hos tjejer.jpeg" alt="ADHD" class="w-full h-32 object-cover rounded-lg">
+                    <img src="../img/Adhd hos tjejer 2.jpeg" alt="ADHD" class="w-full h-32 object-cover rounded-lg">
+                </div>
+                <p class="text-gray-600 mb-4"> Tjejer och killar utvecklas olika, vilket påverkar hur deras hjärnor mognar. Detta kan förklara varför ADHD visar sig olika hos dem. Tjejers symptom är ofta mer introverta, vilket gör att många förblir odiagnostiserade och inte får den hjälp de behöver. Endast cirka 25 % av tjejer med ADHD får en diagnos, vilket visar på brister i upptäckten. Med rätt stöd kan de bättre förstå sina utmaningar och hantera dem effektivt.</p>
+                <a href="/blog/adhd/" class="text-[#337F53] font-medium hover:underline">Läs mer →</a>
+            </div>
+        </article>
+        <article class="card-hover bg-white rounded-xl shadow-sm overflow-hidden">
+            <div class="p-6">
+                <div class="flex gap-4 mb-4">
+                    <span class="bg-[#337F53]/10 text-[#337F53] px-3 py-1 rounded-full text-sm">Stress</span>
+                </div>
+                <h3 class="text-xl font-bold text-gray-900 mb-4">Vardagens måsten föder stress</h3>
+                <img src="../img/Vardagen föders stress 2.jpeg" alt="Stress" class="w-full h-48 object-cover rounded-lg mb-6">
+                <p class="text-gray-600 mb-4">Vardagens måsten skapar stress, och vi försöker hinna med allt utan paus. Vi fastnar i ett ekorrhjul där kraven tar över och semestern ofta inte räcker till. Att bara skala bort uppgifter är svårt, men vi behöver en förändring. En samtalspartner kan hjälpa oss hitta balans och tid för återhämtning.</p>
+            </div>
+        </article>
+
+        <!-- Relationships Post -->
+        <article class="card-hover bg-white rounded-xl shadow-sm overflow-hidden">
+            <div class="p-6">
+                <div class="flex gap-4 mb-4">
+                    <span class="bg-[#337F53]/10 text-[#337F53] px-3 py-1 rounded-full text-sm">Relationer</span>
+                </div>
+                <h3 class="text-xl font-bold text-gray-900 mb-4">När gnistan slocknar</h3>
+                <div class="grid grid-cols-2 gap-4 mb-6">
+                    <p class="text-gray-600">                                Har du och din partner börjat glida isär? Känns det som att ni utvecklas åt olika håll?  
+                        Ni kanske inte längre har gemensamma intressen, mål eller tid tillsammans.  
+                        Kanske delar du oftare personliga nyheter med vänner eller kollegor än med din partner.   </p>
+                    <img src="../img/När gnistan tar slut.jpg" alt="Relationships" class="w-full h-32 object-cover rounded-lg">
+                </div>
+                <ul class="text-gray-600 space-y-2 text-sm">
+                    <li>1) Ni prioriterar inte längre tid tillsammans och gör hellre saker på egen hand.</li> 
+                    <li>2) Du berättar saker först för vänner eller familj istället för din partner.</li>
+                    <li>3) Du glömmer små detaljer din partner berättar och bryr dig mindre om deras planer.</li>
+                    <li>4) Ni firar inte längre årsdagar eller planerar något för framtiden tillsammans.</li>
+                    <li>5) Du tycker ofta att din partner gör fel och dina känslor har svalnat.</li>
+                    <li>6) Ni delar inga gemensamma intressen längre.</li>
+                    <li>7) Du har svårare att ha överseende med din partners misstag.</li>
+                </ul>
+            </div>
+        </article>
+    </section>
+</body>
+</html>
