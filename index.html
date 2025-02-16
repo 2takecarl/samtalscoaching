@@ -16,6 +16,33 @@
         .card-hover { transition: transform 0.3s ease, box-shadow 0.3s ease; }
         .card-hover:hover { transform: translateY(-5px); box-shadow: 0 10px 20px rgba(0,0,0,0.08); }
     </style>
+
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+        </script>
+        <script type="text/javascript">
+        (function(){
+        emailjs.init({
+            publicKey: "2edr2tHvysIuhMVZ7",
+        });
+        })();
+    </script>
+
+    <script type="text/javascript">
+    window.onload = function() {
+        document.getElementById('contact-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            // these IDs from the previous steps
+            emailjs.sendForm('contact_service', 'contact_form', this)
+                .then(() => {
+                    console.log('SUCCESS!');
+                }, (error) => {
+                    console.log('FAILED...', error);
+                });
+        });
+    }
+    </script>
+    <script src="/js/script.js"></script>
 </head>
 <body class="antialiased">
     <!-- Modern Navbar -->
@@ -73,7 +100,7 @@
                         lägen borde vi alla ha en mentor, ett vägledande öra att vända oss till, som finns där och kan 
                         guida oss i det tuffa. Vi lever i ett tufft tempo, med höga förväntningar där alla ska prestera. 
                         Alla är upptagna när vi behöver dem som mest.  
-                            <a href="#" class="text-[#337F53] font-medium hover:underline">Läs mer</a>
+                            <!-- <a href="/" class="text-[#337F53] font-medium hover:underline">Läs mer</a> -->
                         </p>
                     </div>
 
@@ -81,7 +108,7 @@
                         <h3 class="text-2xl font-bold text-gray-900 mb-6">Coaching</h3>
                         <p class="text-gray-600 leading-relaxed">
                             Coaching är inriktat på att nå mål och utveckla förmågor. Det kan handla om att förändra beteendemönster, förverkliga drömmar, förändra livsriktningen, stärka självkänslan mm.  
-                            <a href="#" class="text-[#337F53] font-medium hover:underline">Läs mer</a>
+                            <!-- <a href="/" class="text-[#337F53] font-medium hover:underline">Läs mer</a> -->
                         </p>
                     </div>
                 </div>
@@ -117,7 +144,7 @@
                             <img src="./img/Adhd hos tjejer 2.jpeg" alt="ADHD" class="w-full h-32 object-cover rounded-lg">
                         </div>
                         <p class="text-gray-600 mb-4"> Tjejer och killar utvecklas olika, vilket påverkar hur deras hjärnor mognar. Detta kan förklara varför ADHD visar sig olika hos dem. Tjejers symptom är ofta mer introverta, vilket gör att många förblir odiagnostiserade och inte får den hjälp de behöver. Endast cirka 25 % av tjejer med ADHD får en diagnos, vilket visar på brister i upptäckten. Med rätt stöd kan de bättre förstå sina utmaningar och hantera dem effektivt.</p>
-                        <a href="#" class="text-[#337F53] font-medium hover:underline">Läs mer →</a>
+                        <a href="/blog/adhd" class="text-[#337F53] font-medium hover:underline">Läs mer →</a>
                     </div>
                 </article>
 
@@ -130,6 +157,7 @@
                         <h3 class="text-xl font-bold text-gray-900 mb-4">Vardagens måsten föder stress</h3>
                         <img src="./img/Vardagen föders stress 2.jpeg" alt="Stress" class="w-full h-48 object-cover rounded-lg mb-6">
                         <p class="text-gray-600 mb-4">Vardagens måsten skapar stress, och vi försöker hinna med allt utan paus. Vi fastnar i ett ekorrhjul där kraven tar över och semestern ofta inte räcker till. Att bara skala bort uppgifter är svårt, men vi behöver en förändring. En samtalspartner kan hjälpa oss hitta balans och tid för återhämtning.</p>
+                        <a href="/blog/stress" class="text-[#337F53] font-medium hover:underline">Läs mer →</a>
                     </div>
                 </article>
 
@@ -155,9 +183,59 @@
                             <li>6) Ni delar inga gemensamma intressen längre.</li>
                             <li>7) Du har svårare att ha överseende med din partners misstag.</li>
                         </ul>
+                        <a href="/blog/relationer" class="text-[#337F53] font-medium hover:underline">Läs mer →</a>
                     </div>
                 </article>
             </div>
+        </div>
+    </section>
+
+    <section class="grid lg:grid-cols-3 gap-12 mb-20 w-[70vw] mx-auto">
+        <div class="space-y-6">
+            <div class="bg-emerald-50 p-6 rounded-xl">
+                <i class="fa-solid fa-phone text-emerald-600 text-2xl mb-4"></i>
+                <h3 class="text-lg font-semibold mb-2">Telefon Nr</h3>
+                <p class="text-emerald-800 font-medium">073 343 9840</p>
+            </div>
+            <div class="bg-emerald-50 p-6 rounded-xl">
+                <i class="fa-solid fa-envelope text-emerald-600 text-2xl mb-4"></i>
+                <h3 class="text-lg font-semibold mb-2">E-post</h3>
+                <p class="text-emerald-800 font-medium">stockholmsterapi@gmail.com</p>
+            </div>
+            <div class="bg-emerald-50 p-6 rounded-xl">
+                <i class="fa-solid fa-map-marker-alt text-emerald-600 text-2xl mb-4"></i>
+                <h3 class="text-lg font-semibold mb-2">Besöksadress</h3>
+                <p class="text-emerald-800 font-medium">Stockholm, Sverige</p>
+            </div>
+        </div>
+
+        <div class="lg:col-span-2 bg-white shadow-xl rounded-2xl p-8 ">
+            <h2 class="font-playfair text-3xl font-bold text-emerald-900 mb-8">Kontakta oss</h2>
+            <form class="space-y-6" id="contact-form">
+                <div>
+                    <input type="text" placeholder="Ditt namn" name="from_name" required
+                        class="w-full p-3 border-b-2 border-gray-200 focus:border-emerald-500 focus:outline-none">
+                </div>
+                <div class="grid md:grid-cols-2 gap-6">
+                    <input type="email" placeholder="E-postadress" name="from_email" required
+                        class="w-full p-3 border-b-2 border-gray-200 focus:border-emerald-500 focus:outline-none">
+                    <input type="tel" placeholder="Telefonnummer" name="from_phone"
+                        class="w-full p-3 border-b-2 border-gray-200 focus:border-emerald-500 focus:outline-none">
+                </div>
+                <div>
+                    <textarea rows="5" placeholder="Ditt meddelande" name="message" required
+                        class="w-full p-3 border-b-2 border-gray-200 focus:border-emerald-500 focus:outline-none"></textarea>
+                </div>
+                <div class="flex gap-4">
+                    <button type="submit" class="bg-emerald-600 text-white px-8 py-3 rounded-lg hover:bg-emerald-700 transition-colors">
+                        Skicka meddelande
+                    </button>
+                    <button type="button" onclick="document.getElementById('contact-form').reset()" 
+                        class="bg-gray-100 text-gray-600 px-8 py-3 rounded-lg hover:bg-gray-200 transition-colors">
+                        Rensa formulär
+                    </button>
+                </div>
+            </form>
         </div>
     </section>
 

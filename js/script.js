@@ -51,3 +51,24 @@ window.addEventListener('scroll', function() {
     
 
 
+window.onload = function() {
+    document.getElementById('contact-form').addEventListener('submit', function(event) {
+        event.preventDefault();
+        
+        // Use the correct service ID and template ID from your EmailJS account
+        emailjs.sendForm('service_rvnxesa', 'template_aajjqff', this)
+            .then(() => {
+                alert('Meddelandet har skickats!');
+                this.reset(); // Clear form on success
+            }, (error) => {
+                console.log('FAILED...', error);
+                alert('Något gick fel. Försök igen senare.');
+            });
+    });
+};
+function clear(){
+    document.getElementById('name').value = ''
+    document.getElementById('email').value = ''
+    document.getElementById('message').value = ''
+    document.getElementById('tel').value = ''
+}
